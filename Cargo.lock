@@ -693,6 +693,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "biome_java_factory"
+version = "0.1.0"
+
+[[package]]
+name = "biome_java_syntax"
+version = "0.1.0"
+
+[[package]]
 name = "biome_js_analyze"
 version = "0.5.7"
 dependencies = [

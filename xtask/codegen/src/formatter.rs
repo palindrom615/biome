@@ -825,6 +825,11 @@ fn get_node_concept(
 
             // TODO: implement formatter
             LanguageKind::Yaml => NodeConcept::Auxiliary,
+
+            LanguageKind::Java => match name {
+                _ if name.ends_with("Value") => NodeConcept::Value,
+                _ => NodeConcept::Auxiliary,
+            },
         }
     }
 }
@@ -890,6 +895,7 @@ impl LanguageKind {
             LanguageKind::Grit => "GritFormatter",
             LanguageKind::Html => "HtmlFormatter",
             LanguageKind::Yaml => "YamlFormatter",
+            LanguageKind::Java => "JavaFormatter",
         };
 
         Ident::new(name, Span::call_site())
@@ -904,6 +910,7 @@ impl LanguageKind {
             LanguageKind::Grit => "GritFormatContext",
             LanguageKind::Html => "HtmlFormatContext",
             LanguageKind::Yaml => "YamlFormatContext",
+            LanguageKind::Java => "JavaFormatContext",
         };
 
         Ident::new(name, Span::call_site())
