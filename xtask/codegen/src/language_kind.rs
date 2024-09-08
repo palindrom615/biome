@@ -12,7 +12,7 @@ use quote::{format_ident, quote};
 use std::str::FromStr;
 
 pub const LANGUAGE_PREFIXES: [&str; 10] = [
-    "js_", "ts_", "jsx_", "tsx_", "css_", "json_", "grit_", "html_", "yaml_", "java_"
+    "js_", "ts_", "jsx_", "tsx_", "css_", "json_", "grit_", "html_", "yaml_", "java_",
 ];
 
 #[derive(Debug, Eq, Copy, Clone, PartialEq)]

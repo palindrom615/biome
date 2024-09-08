@@ -1,0 +1,46 @@
+[package]
+authors.workspace    = true
+categories.workspace = true
+description          = "Biome's java parser"
+edition.workspace    = true
+homepage.workspace   = true
+keywords.workspace   = true
+license.workspace    = true
+name                 = "biome_java_parser"
+repository.workspace = true
+version              = "0.5.7"
+
+[dependencies]
+biome_console       = { workspace = true }
+biome_diagnostics   = { workspace = true }
+biome_java_factory  = { workspace = true }
+biome_java_syntax   = { workspace = true }
+biome_parser        = { workspace = true }
+biome_rowan         = { workspace = true }
+biome_unicode_table = { workspace = true }
+drop_bomb           = "0.1.5"
+enumflags2          = { workspace = true }
+indexmap            = { workspace = true }
+rustc-hash          = { workspace = true }
+schemars            = { workspace = true, optional = true }
+serde               = { workspace = true, features = ["derive"] }
+serde_json          = { workspace = true }
+smallvec            = { workspace = true }
+tracing             = { workspace = true }
+
+[dev-dependencies]
+expect-test       = "1.5.0"
+quickcheck        = { workspace = true }
+quickcheck_macros = { workspace = true }
+tests_macros      = { workspace = true }
+
+[features]
+schemars = ["dep:schemars"]
+tests    = []
+
+# cargo-workspaces metadata
+[package.metadata.workspaces]
+independent = true
+
+[lints]
+workspace = true

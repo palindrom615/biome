@@ -121,8 +121,7 @@ pub const JAVA_KINDS_SRC: KindsSrc = KindsSrc {
         "transitive",
         "when",
     ],
-    literals: &[
-        "JAVA_STRING_LITERAL", "JAVA_SCALAR"],
+    literals: &["JAVA_STRING_LITERAL", "JAVA_SCALAR"],
     tokens: &["NEWLINE", "WHITESPACE", "IDENT", "COMMENT"],
     nodes: &[
         "JAVA_ROOT",
@@ -131,7 +130,6 @@ pub const JAVA_KINDS_SRC: KindsSrc = KindsSrc {
         "JAVA_IMPORT",
         "JAVA_CLASS_LIST",
         "JAVA_CLASS",
-
         // Bogus nodes
         "JAVA_BOGUS",
         "JAVA_BOGUS_VALUE",

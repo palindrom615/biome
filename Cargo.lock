@@ -694,11 +694,37 @@ dependencies = [
 
 [[package]]
 name = "biome_java_factory"
-version = "0.1.0"
+version = "0.5.7"
+
+[[package]]
+name = "biome_java_parser"
+version = "0.5.7"
+dependencies = [
+ "biome_console",
+ "biome_diagnostics",
+ "biome_java_factory",
+ "biome_java_syntax",
+ "biome_parser",
+ "biome_rowan",
+ "biome_unicode_table",
+ "drop_bomb",
+ "enumflags2",
+ "expect-test",
+ "indexmap 2.5.0",
+ "quickcheck",
+ "quickcheck_macros",
+ "rustc-hash 1.1.0",
+ "schemars",
+ "serde",
+ "serde_json",
+ "smallvec",
+ "tests_macros",
+ "tracing",
+]
 
 [[package]]
 name = "biome_java_syntax"
-version = "0.1.0"
+version = "0.5.7"
 
 [[package]]
 name = "biome_js_analyze"
